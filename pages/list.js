@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
-
-export default function List({obat}) {
+import obat from "../data/obat.json";
+export default function List() {
   return (
     <div className={styles.container}>
         <style jsx>{`
@@ -77,14 +75,4 @@ export default function List({obat}) {
         </div>    
     </div> 
   )
-}
-export async function getStaticProps(){
-  const req = await fetch('http://localhost:3000/api/obat');
-  const res = await req.json();
-
-  return{
-    props:{
-      obat:res
-    }
-  }
 }
