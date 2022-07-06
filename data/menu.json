@@ -1,0 +1,11 @@
+[
+    {
+        "title": "home", "href": "/", "text": "Home"
+    },
+    {
+        "title": "berita", "href": "/news", "text": "Berita"
+    },
+    {
+        "title": "list", "href": "/list", "text": "List Obat"
+    }
+]
